@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function Content() {
     return (
         <motion.div
-          className="mt-24 bg-white p-3 rounded-lg shadow-lg text-center max-w-md"
+          className="mt-24 bg-white p-2 rounded-lg shadow-lg text-center max-w-md"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -27,7 +27,11 @@ export default function Content() {
             Your @tuniuoi, <br/>
             <i>tuniuoi</i>
           </p>
-          <div className="mt-4 text-5xl">🎄🎅🎁</div>
+          <div className="mt-4 text-5xl flex justify-center items-center gap-[15px]">
+            <img src="pic1.jpg" className='w-[60px] h-auto rounded-[10px]'/>
+            <img src="pic2.jpg" className='w-[60px] h-auto rounded-[10px]'/>
+            <img src="pic3.jpg" className='w-[60px] h-auto rounded-[10px]'/>
+          </div>
         </motion.div>
       )
 }
